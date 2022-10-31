@@ -1,47 +1,25 @@
-                        </div>
-                        <!--end::Container-->
-                    </div>
-                    <!--end::Entry-->
-                </div>
-                <!--end::Content-->
-                <!--begin::Footer-->
-                <div class="footer bg-white py-4 d-flex flex-lg-column " id="kt_footer"></div>
-                <!--end::Footer-->
-            </div>
-            <!--end::Wrapper-->
+
         </div>
-        <!--end::Page-->
-    </div>
-    <!--end::Main-->
+        <!-- END layout-wrapper -->
 
-    <!--begin::Global Theme Bundle(used by all pages)-->
-    <script src="{{ env('APP_ASSET_URL') }}assets/plugins/global/plugins.bundle.js?v=7.0.6"></script>
-    <script src="{{ env('APP_ASSET_URL') }}assets/js/scripts.bundle.js?v=7.0.6"></script>
-    <!--end::Global Theme Bundle-->
 
-    <!--begin::Page Vendors(used by this page)-->
-    <script src="{{ env('APP_ASSET_URL') }}assets/plugins/custom/ckeditor/ckeditor-classic.bundle.js?v=7.0.6"></script>
-    <script src="{{ env('APP_ASSET_URL') }}assets/js/pages/crud/forms/editors/ckeditor-classic.js?v=7.0.6"></script>
-    <!--end::Page Vendors-->
+        <!-- JAVASCRIPT -->
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/jquery/jquery.min.js"></script>
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/node-waves/waves.min.js"></script>
 
-    <!--begin::Page Scripts(used by this page)-->
-    <!-- <script src="{{ env('APP_ASSET_URL') }}assets/js/pages/widgets.js?v=7.0.6"></script> -->
-    <script src="{{ env('APP_ASSET_URL') }}assets/js/jquery-3.5.1.js"></script>
-    <script src="{{ env('APP_ASSET_URL') }}assets/js/jquery.dataTables.min.js"></script>
-    <!-- <script src="{{ env('APP_ASSET_URL') }}dataTables.bootstrap4.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-       $(document).ready(function() {
-            $('#example').DataTable();
+        <!-- apexcharts -->
+        <script src="{{ env('APP_ASSET_URL') }}assets/libs/apexcharts/apexcharts.min.js"></script>
 
-       });
-    </script>
-    <!--end::Page Scripts-->
-    <!--begin::Page Scripts(used by this page)-->
-        <!-- <script src="{{ env('APP_ASSET_URL') }}assets/js/pages/crud/ktdatatable/base/html-table.js?v=7.0.6"></script> -->
-    <!--end::Page Scripts-->
-    
-</body>
-<!--end::Body-->
+        <!-- dashboard init -->
+        <script src="{{ env('APP_ASSET_URL') }}assets/js/pages/dashboard.init.js"></script>
 
+        <!-- App js -->
+        <script src="{{ env('APP_ASSET_URL') }}assets/js/app.js"></script>
+    </body>
+
+
+<!-- Mirrored from themesbrand.com/skote/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Oct 2022 14:09:52 GMT -->
 </html>

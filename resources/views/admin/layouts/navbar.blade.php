@@ -1,178 +1,151 @@
-<!--begin::Aside Menu-->
-                <div class="aside-menu-wrapper flex-column-fluid" id="kt_aside_menu_wrapper">
+ <body data-sidebar="dark" data-layout-mode="light">
 
-                    <!--begin::Menu Container-->
-                    <div id="kt_aside_menu" class="aside-menu my-4 " data-menu-vertical="1" data-menu-scroll="1" data-menu-dropdown-timeout="500">
-                        <!--begin::Menu Nav-->
-                        <ul class="menu-nav ">
-                            <li class="menu-item " aria-haspopup="true">
-                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}" class="menu-link "><span class="svg-icon menu-icon">
-                                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                                    </span><span class="menu-text">Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="menu-item  menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                    <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                                    </span><span class="menu-text">Homepage</span><i class="menu-arrow"></i></a>
-                                    <div class="menu-submenu "><i class="menu-arrow"></i>
-                                        <ul class="menu-subnav">
-                                            <li class="menu-item " aria-haspopup="true">
-                                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/homepage/sliders" class="menu-link "><span class="svg-icon menu-icon">
-                                                    <i class="fab fa-delicious" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">Sliders</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item " aria-haspopup="true">
-                                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/homepage/sections" class="menu-link "><span class="svg-icon menu-icon">
-                                                    <i class="fas fa-text-height" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">Sections</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </li>
-                            <li class="menu-item " aria-haspopup="true">
-                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/residences" class="menu-link "><span class="svg-icon menu-icon">
-                                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                                    </span><span class="menu-text">Residences</span>
-                                </a>
-                            </li>
-                            <li class="menu-item  menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                    <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                                    </span><span class="menu-text">About SQ</span><i class="menu-arrow"></i></a>
-                                    <div class="menu-submenu "><i class="menu-arrow"></i>
-                                        <ul class="menu-subnav">
-                                            <li class="menu-item " aria-haspopup="true">
-                                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/about-sq/sliders" class="menu-link "><span class="svg-icon menu-icon">
-                                                    <i class="fab fa-delicious" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">Sliders</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item " aria-haspopup="true">
-                                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/about-sq/sections" class="menu-link "><span class="svg-icon menu-icon">
-                                                    <i class="fas fa-text-height" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">Sections</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item " aria-haspopup="true">
-                                                
-                                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                                    <i class="fa fa-suitcase" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">SQ Office</span><i class="menu-arrow"></i>
-                                                </a>
-                                                <div class="menu-submenu "><i class="menu-arrow"></i>
-                                                    <ul class="menu-subnav">
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-office/sliders" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fab fa-delicious" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sliders</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-office/sections" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fas fa-text-height" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sections</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu-item " aria-haspopup="true">
-                                                
-                                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                                    <i class="fas fa-suitcase-rolling" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">SQ Res</span><i class="menu-arrow"></i>
-                                                </a>
-                                                <div class="menu-submenu "><i class="menu-arrow"></i>
-                                                    <ul class="menu-subnav">
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-res/sliders" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fab fa-delicious" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sliders</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-res/sections" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fas fa-text-height" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sections</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu-item " aria-haspopup="true">
-                                                
-                                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                                    <i class="fas fa-cubes" aria-hidden="true"></i>
-                                                    </span><span class="menu-text">SQ Dome</span><i class="menu-arrow"></i>
-                                                </a>
-                                                <div class="menu-submenu "><i class="menu-arrow"></i>
-                                                    <ul class="menu-subnav">
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-dome/sliders" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fab fa-delicious" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sliders</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-item " aria-haspopup="true">
-                                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/sq-dome/sections" class="menu-link ">
-                                                                <span class="svg-icon menu-icon">
-                                                                    <i class="fas fa-text-height" aria-hidden="true"></i>
-                                                                </span>
-                                                                <span class="menu-text">Sections</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </li>
-                            <li class="menu-item " aria-haspopup="true">
-                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/metatags" class="menu-link "><span class="svg-icon menu-icon">
-                                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
-                                    </span><span class="menu-text">Meta Tags</span>
-                                </a>
-                            </li>
-                            <li class="menu-item " aria-haspopup="true">
-                                <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/landing-pages" class="menu-link "><span class="svg-icon menu-icon">
-                                    <i class="fa fa-bookmark" aria-hidden="true"></i>
-                                    </span><span class="menu-text">Landing Pages</span>
-                                </a>
-                            </li>
-                            
-                            <li class="menu-item  menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                                <a href="javascript:;" class="menu-link menu-toggle"><span class="svg-icon menu-icon">
-                                    <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                                    </span><span class="menu-text">General</span><i class="menu-arrow"></i>
-                                </a>
-                                <div class="menu-submenu "><i class="menu-arrow"></i>
-                                    <ul class="menu-subnav">
-                                        <li class="menu-item " aria-haspopup="true">
-                                            <a href="{{ env('APP_HOME_URL') }}{{ env('APP_ADMIN_SECTION') }}/general/heading-slider" class="menu-link "><span class="svg-icon menu-icon">
-                                                <i class="fas fa-sliders-h" aria-hidden="true"></i>
-                                                </span><span class="menu-text">Heading Sliders</span>
-                                            </a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <!--end::Menu Nav-->
-                    </div>
-                    <!--end::Menu Container-->
-                </div>
-                <!--end::Aside Menu-->
+     <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+     <!-- Begin page -->
+     <div id="layout-wrapper">
+         <header id="page-topbar">
+             <div class="navbar-header">
+                 <div class="d-flex">
+                     <!-- LOGO -->
+                     <div class="navbar-brand-box">
+
+                         <a href="index.html" class="logo logo-light">
+                             <span class="logo-lg">
+                                 <img src="{{ env('APP_ASSET_URL') }}assets/logo/LOGO-KGS-01-initial-white.svg" alt="">
+                             </span>
+                         </a>
+                     </div>
+
+                     <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                         <i class="fa fa-fw fa-bars"></i>
+                     </button>
+
+                     <!-- App Search-->
+                     <form class="app-search d-none d-lg-block">
+                         <div class="position-relative">
+                             <input type="text" class="form-control" placeholder="Search...">
+                             <span class="bx bx-search-alt"></span>
+                         </div>
+                     </form>
+
+                 </div>
+
+                 <div class="d-flex">
+
+                     <div class="dropdown d-inline-block d-lg-none ms-2">
+                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <i class="mdi mdi-magnify"></i>
+                         </button>
+                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+
+                             <form class="p-3">
+                                 <div class="form-group m-0">
+                                     <div class="input-group">
+                                         <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                         <div class="input-group-append">
+                                             <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+
+                     <div class="dropdown d-none d-lg-inline-block ms-1">
+                         <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                             <i class="bx bx-fullscreen"></i>
+                         </button>
+                     </div>
+
+                     @include('admin.layouts.notifications')
+
+                     @include('admin.layouts.profile')
+
+                     <div class="dropdown d-inline-block">
+                         <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                             <i class="bx bx-cog bx-spin"></i>
+                         </button>
+                     </div>
+
+                 </div>
+             </div>
+         </header>
+
+         <!-- ========== Left Sidebar Start ========== -->
+         <div class="vertical-menu">
+
+             <div data-simplebar class="h-100">
+
+                 <!--- Sidemenu -->
+                 <div id="sidebar-menu">
+                     <!-- Left Menu Start -->
+                     <ul class="metismenu list-unstyled" id="side-menu">
+                         <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bx-home-circle"></i>
+                                 <span key="t-dashboards">Dashboards</span>
+                             </a>
+                         </li>
+
+                         <li class="menu-title" key="t-apps">Apps</li>
+                         <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bxs-user-detail"></i>
+                                 <span key="t-contacts">Clients</span>
+                             </a>
+                             <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="contacts-grid.html" key="t-user-grid">Users Grid</a></li>
+                                 <li><a href="contacts-list.html" key="t-user-list">Users List</a></li>
+                                 <li><a href="contacts-profile.html" key="t-profile">Profile</a></li>
+                             </ul>
+                         </li>
+                        <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bx-receipt"></i>
+                                 <span key="t-invoices">Proposals</span>
+                             </a>
+                             <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="invoices-list.html" key="t-invoice-list">Invoice List</a></li>
+                                 <li><a href="invoices-detail.html" key="t-invoice-detail">Invoice Detail</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bx-briefcase-alt-2"></i>
+                                 <span key="t-projects">Projects</span>
+                             </a>
+                             <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="projects-grid.html" key="t-p-grid">Projects Grid</a></li>
+                                 <li><a href="projects-list.html" key="t-p-list">Projects List</a></li>
+                                 <li><a href="projects-overview.html" key="t-p-overview">Project Overview</a></li>
+                                 <li><a href="projects-create.html" key="t-create-new">Create New</a></li>
+                             </ul>
+                         </li>
+
+                         <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bx-task"></i>
+                                 <span key="t-tasks">Tasks</span>
+                             </a>
+                             <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="tasks-list.html" key="t-task-list">Task List</a></li>
+                                 <li><a href="tasks-kanban.html" key="t-kanban-board">Kanban Board</a></li>
+                                 <li><a href="tasks-create.html" key="t-create-task">Create Task</a></li>
+                             </ul>
+                         </li>
+                        <li>
+                             <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                 <i class="bx bx-receipt"></i>
+                                 <span key="t-invoices">Invoices</span>
+                             </a>
+                             <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="invoices-list.html" key="t-invoice-list">Invoice List</a></li>
+                                 <li><a href="invoices-detail.html" key="t-invoice-detail">Invoice Detail</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </div>
+                 <!-- Sidebar -->
+             </div>
+         </div>
+         <!-- Left Sidebar End -->
