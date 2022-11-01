@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ProposalController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\PasswordController;
 use App\Http\Controllers\Admin\UserController;
@@ -43,7 +44,7 @@ Route::group(['prefix' => env('APP_ADMIN_SECTION'), 'namespace' => 'Admin'], fun
 
         // Home
         Route::get('/', [HomeController::class, 'index']);
-
+        
         Route::group(['middleware' => 'admin'], function() {
 
             // User Management
@@ -57,6 +58,12 @@ Route::group(['prefix' => env('APP_ADMIN_SECTION'), 'namespace' => 'Admin'], fun
             
             Route::get('/user/remove',      [UserController::class, 'removeRender']);
             Route::post('/user/remove',     [UserController::class, 'removeHandle']);
+
+            // Proposal Management
+            Route::get('/proposals',             [ProposalController::class, 'index']);
+
+            Route::get('/proposals/create',      [ProposalController::class, 'createRender']);
+            Route::post('/proposals/create',     [ProposalController::class, 'createHandle']);
 
         });
 

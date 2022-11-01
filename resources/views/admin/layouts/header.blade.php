@@ -8,7 +8,7 @@
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ env('APP_ASSET_URL') }}assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ env('APP_ASSET_URL') }}assets/images/favicon-kgs.ico">
 
         <!-- Bootstrap CssFF -->
         <link href="{{ env('APP_ASSET_URL') }}assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
